@@ -1,4 +1,6 @@
 # STM32F446RE High-performance foundation line, Arm Cortex-M4 core with DSP and FPU, 512 Kbytes of Flash memory, 180 MHz CPU, ART Accelerator, Dual QSPI
+set(LINKER_SCRIPT "${CMAKE_CURRENT_LIST_DIR}/STM32F446RETx_FLASH.ld")
+
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR arm)
 
@@ -143,4 +145,3 @@ set(C_CXX_RELEASE_ONLY_FLAGS
 
 add_compile_options("$<$<AND:$<COMPILE_LANGUAGE:C,CXX>,$<CONFIG:DEBUG>>:${C_CXX_DEBUG_ONLY_FLAGS}>")
 add_compile_options("$<$<AND:$<COMPILE_LANGUAGE:C,CXX>,$<CONFIG:RELEASE>>:${C_CXX_REALEASE_ONLY_FLAGS}>")
-

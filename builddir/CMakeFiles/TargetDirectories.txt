@@ -1,0 +1,3 @@
+/workspaces/DriverTutorial/builddir/CMakeFiles/rebuild_cache.dir
+/workspaces/DriverTutorial/builddir/CMakeFiles/edit_cache.dir
+/workspaces/DriverTutorial/builddir/CMakeFiles/BareMetalWorkshop.dir

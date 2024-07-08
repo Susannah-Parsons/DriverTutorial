@@ -31,3 +31,10 @@ project(BARE_METAL_WORKSHOP_20240626
 include("${CMAKE_CURRENT_LIST_DIR}/gcc-arm-none-eabi.cmake")
 
 add_executable(BareMetalWorkshop main.cpp)
+# Not sure how to add these files nor where?
+# target_sources(BareMetalWorkshop INTERFACE
+#     ./sysmem.c
+#     ./syscalls.c
+#     ./startup_stm32f446xx.s
+#     ./system_stm32f4xx.c
+# )
