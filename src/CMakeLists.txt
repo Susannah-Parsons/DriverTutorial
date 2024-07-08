@@ -28,4 +28,6 @@ project(BARE_METAL_WORKSHOP_20240626
         LANGUAGES C CXX ASM
 )
 
+include("${CMAKE_CURRENT_LIST_DIR}/gcc-arm-none-eabi.cmake")
+
 add_executable(BareMetalWorkshop main.cpp)
